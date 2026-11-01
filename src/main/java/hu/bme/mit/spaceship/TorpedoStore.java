@@ -27,7 +27,7 @@ public class TorpedoStore {
       }
     }
   }
-
+//ha atorpedók száma kisebb mint 1 vagy nagyobb mint a torpedók száma, akkor dobjon IllegalArgumentExceptiont
   public boolean fire(int numberOfTorpedos){
     if(numberOfTorpedos < 1 || numberOfTorpedos > this.torpedoCount){
       throw new IllegalArgumentException("numberOfTorpedos");
